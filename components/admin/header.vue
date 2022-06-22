@@ -14,28 +14,36 @@
     </button>
     <ul class="c-header-nav ml-auto mr-4">
 
-      <li class="c-header-nav-item dropdown"><a class="c-header-nav-link" data-toggle="dropdown" href="#" role="button"
-          aria-haspopup="true" aria-expanded="false">
+      <li class="c-header-nav-item dropdown">
+        <a class="c-header-nav-link" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">
           <div class="c-avatar"><img class="c-avatar-img"
               :src="`https://ui-avatars.com/api/?name=${user.name}&amp;background=4e73df&amp;color=ffffff&amp;size=100`">
           </div>
         </a>
         <div class="dropdown-menu dropdown-menu-right pt-0">
-          <div class="dropdown-header bg-light py-2 rounded"><strong>QUICK MENU</strong></div><a class="dropdown-item" href="#">
+          <div class="dropdown-header bg-light py-2 rounded"><strong>QUICK MENU</strong></div>
+          <nuxt-link :to="{name: 'admin-categories'}" class="dropdown-item">
             <svg class="c-icon mr-2">
               <use xlink:href="@/node_modules/@coreui/icons/sprites/free.svg#cil-folder"></use>
-            </svg> Categories</a><a class="dropdown-item" href="#">
+            </svg> Categories
+          </nuxt-link>
+          <nuxt-link :to="{name: 'admin-products'}" class="dropdown-item">
             <svg class="c-icon mr-2">
               <use xlink:href="@/node_modules/@coreui/icons/sprites/free.svg#cil-layers"></use>
-            </svg> Products</a><a class="dropdown-item" href="#">
+            </svg> Products
+          </nuxt-link>
+          <nuxt-link :to="{name: 'admin-customers'}" class="dropdown-item">
             <svg class="c-icon mr-2">
               <use xlink:href="@/node_modules/@coreui/icons/sprites/free.svg#cil-user"></use>
-            </svg> Customers</a>
+            </svg> Customers
+          </nuxt-link>
           <div class="dropdown-divider"></div>
-          <div class="dropdown-header bg-light py-2 rounded"><strong>ORDERS</strong></div><a class="dropdown-item" href="#">
+          <div class="dropdown-header bg-light py-2 rounded"><strong>ORDERS</strong></div>
+          <nuxt-link :to="{name: 'admin-invoices'}" class="dropdown-item">
             <svg class="c-icon mr-2">
               <use xlink:href="@/node_modules/@coreui/icons/sprites/free.svg#cil-cart"></use>
-            </svg> Invoices</a>
+            </svg> Invoices
+          </nuxt-link>
           <div class="dropdown-divider"></div>
           <a class="dropdown-item" role="button" @click="logout">
             <svg class="c-icon mr-2">

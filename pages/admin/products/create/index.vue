@@ -46,7 +46,7 @@
                   </div>
 
                   <div class="row">
-                    <div class="col-md-6">
+                    <!-- <div class="col-md-6">
                       <div class="form-group">
                         <label>WEIGHT (Gram)</label>
                         <input type="number" v-model="product.weight" placeholder="Masukkan Berat Product (Gram)"
@@ -55,7 +55,7 @@
                           <b-alert show variant="danger">{{ validation.weight[0] }}</b-alert>
                         </div>
                       </div>
-                    </div>
+                    </div> -->
                     <div class="col-md-6">
                       <div class="form-group">
                         <label>STOCK</label>
@@ -146,7 +146,7 @@
           title: '',
           category_id: '',
           description: '',
-          weight: '',
+          // weight: '',
           price: '',
           stock: '',
           discount: ''

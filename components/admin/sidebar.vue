@@ -14,6 +14,12 @@
         </svg> Categories</nuxt-link>
     </li>
 
+   <li class="c-sidebar-nav-item"><nuxt-link :to="{name: 'admin-sub-categories'}" class="c-sidebar-nav-link">
+        <svg class="c-sidebar-nav-icon">
+            <use xlink:href="@/node_modules/@coreui/icons/sprites/free.svg#cil-folder"></use>
+        </svg> Sub Categories</nuxt-link>
+    </li>
+
     <li class="c-sidebar-nav-item">
         <nuxt-link :to="{name: 'admin-products'}" class="c-sidebar-nav-link">
             <svg class="c-sidebar-nav-icon">
